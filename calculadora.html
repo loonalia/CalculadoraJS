@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculadora</title>
+</head>
+
+<body class="bg-gray-200">
+    <main class="bg-white w-[300px] border-1 border-[#ccc] rounded-md mx-auto mt-50 p-5">
+        <h1 class="font-bold text-2xl mb-5">Calculadora Simples</h1>
+        <form>
+            <input placeholder="Digite o primeiro número" class="border-1 border-gray-500 w-full rounded-sm p-1" type="number" name="numero1" id="numero1">
+            <select class="border-1 border-gray-500 w-full my-5 rounded-sm p-1" name="operacoes" id="operacao">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input placeholder="Digite o segundo número" class="border-1 border-gray-500 w-full rounded-sm p-1" type="number" name="numero2" id="numero2">
+            <button class="bg-blue-500 w-full p-1 mt-5 mb-2 text-white rounded-md" type="submit">Calcular</button>
+        </form>
+        <button class="bg-[#ccc] w-full p-1 text-white rounded-md">Limpar</button>
+        <div id="resultado"></div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
